@@ -10,7 +10,7 @@ pool:
   name: 'mypool'
 
 steps:
-- script: echo '$(System.pullRequest.SourceBranch)'
+- script: echo '$(Build.SourceBranch)'
   displayName: 'Run a one-line script'
 
 - script: |
