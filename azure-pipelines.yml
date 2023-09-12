@@ -6,9 +6,9 @@ pool:
 
 steps:
 - script: |
-    echo Source Branch of the Pull Request: ${{System.PullRequest.SourceBranch}}
+    echo Source Branch of the Pull Request: ${System.PullRequest.SourceBranch}
   displayName: 'Run a one-line script '
-  
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
